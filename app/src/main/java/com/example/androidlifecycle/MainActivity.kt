@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         textView.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
                 Log.d(TAG,"onClick: called")
-               // val intent=Intent(this@MainActivity,secondActivity)
                 val intent=Intent(this@MainActivity,SecondActivity::class.java)
                 startActivity(intent)
             }
